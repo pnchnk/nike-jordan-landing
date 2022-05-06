@@ -1,0 +1,28 @@
+html, body {
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 65vw;
+  margin: auto;
+}
+
+.first-section {
+  background-image: url(../img/first-section-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 947px;
+}
+
+header {
+  background-color: lightgray;
+  width: 80%;
+}
+
+/*# sourceMappingURL=all.css.map */
