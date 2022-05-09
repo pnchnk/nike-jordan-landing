@@ -1,5 +1,5 @@
 header {
-    background-color: #E5E5E5;
+    background-color: $color-main ;
     margin-top: 0;
     border-bottom: 1px solid #F4F4F4;
 }
@@ -9,9 +9,8 @@ nav {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 100px;
-    background-color: #EFEFEF;
-    border-left: #F4F4F4 3px solid;
-    border-right: #F4F4F4 3px solid;
+    background-color: $color-secondary;
+    @extend %border;
 }
 
 .spisok {
@@ -39,8 +38,7 @@ nav {
 
 .text-desc {
     padding-top: 100px;
-    border-left: #F4F4F4 3px solid;
-    border-right: #F4F4F4 3px solid;
+    @extend %border;
     position: relative;
     padding-bottom: 250px ;
     h3 {
@@ -73,7 +71,6 @@ nav {
     }
 
     .btn {
-        // margin-top: 60px;
         button {
             padding: 14px 40px;
             background-color: #F6F4F4;
