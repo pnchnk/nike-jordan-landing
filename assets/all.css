@@ -5,7 +5,7 @@ html, body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  background-color: #EFEFEF;
+  background-color: #E5E5E5;
 }
 
 *, *::before, *::after {
@@ -13,9 +13,10 @@ html, body {
 }
 
 .container {
-  width: 70vw;
+  width: 80vw;
   margin: auto;
   position: relative;
+  background-color: #E5E5E5;
 }
 
 .row {
@@ -26,15 +27,25 @@ html, body {
   margin-left: 10px;
 }
 
+.text-desc {
+  background-color: #EFEFEF;
+  padding-left: 100px;
+}
+
 header {
   background-color: #E5E5E5;
   margin-top: 0;
+  border-bottom: 1px solid #F4F4F4;
 }
 
 nav {
   display: flex;
   padding-top: 40px;
   padding-bottom: 40px;
+  padding-left: 100px;
+  background-color: #EFEFEF;
+  border-left: #F4F4F4 3px solid;
+  border-right: #F4F4F4 3px solid;
 }
 
 .spisok ul {
@@ -51,6 +62,70 @@ nav {
 }
 .spisok a:hover {
   text-decoration: underline black;
+}
+
+.text-desc {
+  padding-top: 100px;
+  border-left: #F4F4F4 3px solid;
+  border-right: #F4F4F4 3px solid;
+  position: relative;
+  padding-bottom: 250px;
+}
+.text-desc h3 {
+  font-size: 66px;
+  margin: 0;
+}
+.text-desc h4 {
+  font-size: 71px;
+  color: #B6011A;
+  font-weight: 200;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.text-desc p {
+  width: 30%;
+  font-size: 16px;
+  line-height: 154%;
+}
+
+.product-desc {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-desc .price p {
+  font-size: 53px;
+}
+.product-desc .btn button {
+  padding: 14px 40px;
+  background-color: #F6F4F4;
+  border-radius: 35px;
+  border: none;
+  -webkit-box-shadow: 9px 11px 21px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 9px 11px 21px 3px rgba(0, 0, 0, 0.25);
+}
+.product-desc .btn button a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.images .just-do {
+  position: absolute;
+  top: -130px;
+  right: 600px;
+}
+.images .nike-first {
+  position: absolute;
+  top: -130px;
+  right: 0px;
+}
+.images .nike-second {
+  position: absolute;
+  top: -130px;
+  right: 0px;
 }
 
 /*# sourceMappingURL=all.css.map */
