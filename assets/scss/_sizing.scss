@@ -2,6 +2,9 @@ html, body {
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    background-color: #EFEFEF;
 }
 
 
@@ -10,32 +13,15 @@ html, body {
 }
 
 .container {
-    width: 65vw;
+    width: 70vw;
     margin: auto;
+    position: relative;
 }
 
-.first-section {
-    background-image: url(../img/first-section-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 947px;
+.row {
+    display: inline-flex;
 }
 
-header {
-    background-color: lightgray;
-    width: 80%;
+.col {
+    margin-left: 10px;
 }
-
-.logo {
-  
-}
-
-// .row {
-//     display: flex;
-//     flex-direction: row;
-// }
-
-// .col {
-//     display: flex;
-//     flex-direction: column;
-// }
