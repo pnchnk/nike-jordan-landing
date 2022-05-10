@@ -1,0 +1,93 @@
+@media (max-width:1650px) {
+    .images {
+        .just-do {
+            right:30%;
+        }
+        .nike-first {
+            width: 70%;
+        }
+        .nike-second {
+            width: 70%;
+        }
+    }
+
+    .text-desc {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width:1200px) {
+    .images {
+        .just-do {
+            right:30%;
+        }
+        .nike-first {
+            visibility: hidden;
+        }
+        .nike-second {
+            top: 80px;
+        }
+    }
+
+    .product-desc {
+        width: 35%;
+    }
+}
+
+@media (max-width:1050px) {
+    .images {
+        .just-do {
+            right:20%;
+        }
+        .nike-first {
+            visibility: hidden;
+        }
+        .nike-second {
+            top: 190px;
+        }
+    }
+    .product-desc {
+        width: 50%;
+    }
+
+    .spisok {
+        ul {
+            width: 40%;
+        }
+        
+        li {
+            font-size: 20px;
+            margin-left: 30%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .text-desc {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        p {
+            width: 45%;
+        }
+    }
+    
+    .product-desc {
+        width: 100%;
+    }
+
+    nav {
+        justify-content: center;
+        padding-left: 0;
+        img {
+            visibility: hidden;
+        }
+    }
+    .menu {
+        padding-left: 0;
+        li {
+            margin-left: 0;
+            margin-right: 30%;
+        }
+    }
+}

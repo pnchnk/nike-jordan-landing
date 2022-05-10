@@ -63,6 +63,9 @@ nav {
   background-color: #EFEFEF;
 }
 
+.spisok {
+  width: 100%;
+}
 .spisok ul {
   display: inline-flex;
   list-style-type: none;
@@ -138,6 +141,89 @@ nav {
   top: -130px;
   right: 0px;
   z-index: 3;
+}
+
+@media (max-width: 1650px) {
+  .images .just-do {
+    right: 30%;
+  }
+  .images .nike-first {
+    width: 70%;
+  }
+  .images .nike-second {
+    width: 70%;
+  }
+
+  .text-desc {
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .images .just-do {
+    right: 30%;
+  }
+  .images .nike-first {
+    visibility: hidden;
+  }
+  .images .nike-second {
+    top: 80px;
+  }
+
+  .product-desc {
+    width: 35%;
+  }
+}
+@media (max-width: 1050px) {
+  .images .just-do {
+    right: 20%;
+  }
+  .images .nike-first {
+    visibility: hidden;
+  }
+  .images .nike-second {
+    top: 190px;
+  }
+
+  .product-desc {
+    width: 50%;
+  }
+
+  .spisok ul {
+    width: 40%;
+  }
+  .spisok li {
+    font-size: 20px;
+    margin-left: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .text-desc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-desc p {
+    width: 45%;
+  }
+
+  .product-desc {
+    width: 100%;
+  }
+
+  nav {
+    justify-content: center;
+    padding-left: 0;
+  }
+  nav img {
+    visibility: hidden;
+  }
+
+  .menu {
+    padding-left: 0;
+  }
+  .menu li {
+    margin-left: 0;
+    margin-right: 30%;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
