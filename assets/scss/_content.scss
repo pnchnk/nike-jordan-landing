@@ -10,7 +10,7 @@ nav {
     padding-bottom: 40px;
     padding-left: 80px;
     background-color: $color-secondary;
-    @extend %border;
+    @extend %border-left-right ;
 }
 
 .spisok {
@@ -40,7 +40,7 @@ nav {
 
 .text-desc {
     padding-top: 100px;
-    @extend %border;
+    @extend %border-left-right ;
     position: relative;
     padding-bottom: 250px ;
     h3 {
@@ -50,7 +50,7 @@ nav {
 
     h4 {
         font-size: 71px;
-        color: #B6011A;
+        color: $color-red;
         font-weight: 200;
         margin-top: 20px;
         margin-bottom: 0;
@@ -76,14 +76,7 @@ nav {
 
     .btn {
         button {
-            padding: 14px 40px;
-            background-color: #F6F4F4;
-            border-radius: 35px;
-            border: none;
-            -webkit-box-shadow: 9px 11px 21px 3px rgba(0,0,0,0.25); 
-            box-shadow: 9px 11px 21px 3px rgba(0,0,0,0.25);
-            
-            
+            @extend %button-style;
 
             a {
                 font-size: 18px;
