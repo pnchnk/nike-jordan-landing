@@ -1,12 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
+
+@mixin container {
+    width: 80vw;
+    margin: auto;
+}
+
 $color-main :  #E5E5E5;
 $color-secondary : #EFEFEF;
 $color-red : #B6011A;
 
-%border-left-right {
-    border-left: #F4F4F4 3px solid;
-    border-right: #F4F4F4 3px solid;
+
+
+@mixin border-left-right($width, $color) {
+    border-left: $width $color solid;
+    border-right: $width $color solid;
+}
+
+@mixin border-bottom($width, $color) {
+    border-bottom:$width $color solid;
+}
+
+@mixin box-shadow {
+    -webkit-box-shadow: 9px 11px 21px 3px rgba(0,0,0,0.25); 
+    box-shadow: 9px 11px 21px 3px rgba(0,0,0,0.25);
 } 
 
 %button-style {
@@ -14,10 +31,7 @@ $color-red : #B6011A;
      background-color: #F6F4F4;
      border-radius: 35px;
      border: none;
-     @extend %box-shadow;
+     @include box-shadow;
 }
 
-%box-shadow {
-    -webkit-box-shadow: 9px 11px 21px 3px rgba(0,0,0,0.25); 
-    box-shadow: 9px 11px 21px 3px rgba(0,0,0,0.25);
-}
+

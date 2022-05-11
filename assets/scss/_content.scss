@@ -1,7 +1,7 @@
 header {
     background-color: $color-main ;
     margin-top: 0;
-    border-bottom: 1px solid #F4F4F4;
+    @include border-bottom(#F4F4F4, 1px);
 }
 
 nav {
@@ -10,7 +10,7 @@ nav {
     padding-bottom: 40px;
     padding-left: 80px;
     background-color: $color-secondary;
-    @extend %border-left-right ;
+    @include border-left-right(3px, #F4F4F4);
 }
 
 .spisok {
@@ -40,7 +40,7 @@ nav {
 
 .text-desc {
     padding-top: 100px;
-    @extend %border-left-right ;
+    @include border-left-right(3px, #F4F4F4);
     position: relative;
     padding-bottom: 250px ;
     h3 {
